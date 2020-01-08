@@ -6,7 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
+
+import org.springframework.web.bind.annotation.PostMapping;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +24,9 @@ public class SimpleprojectApplication {
 	@ExceptionHandler
 
 	@RequestMapping
-    @GetMapping
+
+    @PostMapping
+
 	public static void main(String[] args) {
 		SpringApplication.run(SimpleprojectApplication.class, args);
 	}
