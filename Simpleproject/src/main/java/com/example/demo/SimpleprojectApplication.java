@@ -15,18 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@RestControllerAdvice
-@Component
-@RestController
 public class SimpleprojectApplication {
-
-	@ExceptionHandler
-
-	@RequestMapping
-
-    @PostMapping
-
 	public static void main(String[] args) {
 		SpringApplication.run(SimpleprojectApplication.class, args);
 	}
